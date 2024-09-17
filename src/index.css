@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: iranSanse;
+  src: url("./../public/font/BYagut.ttf");
+}
+body {
+  color: #737789;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "iranSanse";
+  direction: rtl;
+}
+a {
+  background-color: transparent;
+  color: #007bff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+svg {
+  display: inline-block;
+}
+.service-one {
+  background-color: #ebf4fc;
+  border-radius: 25px;
+  direction: rtl;
+  min-height: 200px;
+  overflow: hidden;
+  padding: 25px 0;
+  position: relative;
+}
+.img-slider img{
+  margin: 0 auto;
 }
